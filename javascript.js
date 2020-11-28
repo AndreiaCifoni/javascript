@@ -43,29 +43,46 @@
 
 
 
+//  GUESSING GAME EXERCISE
+//
+//  let maximum = parseInt(prompt("Enter the maximum number!"));
+//  while(!maximum) {
+//      maximum = parseInt(prompt("Enter a valid number!"));
+//  }
+//  
+//  const targetNum = Math.floor(Math.random() * maximum) + 1;
+//  
+//  let guess = parseInt(prompt("enter your first guess!"));
+//  let attempts = 1;
+//  
+//  while (parseInt(guess) !== targetNum) {
+//      if (guess === "q") break;
+//      attempts++;
+//      if (guess > targetNum) {
+//          guess = (prompt("Too high! Enter a new guess:"));        
+//      }   else {
+//          guess = (prompt("Too low! Enter a new guess:"))
+//      }
+//  }
+//  
+//  if(guess === "q"){
+//      console.log("OK, YOU QUIT!")
+//  } else {
+//      console.log(`YOU GOT IT! It took you ${attempts} guesses`)
+//  }
 
-let maximum = parseInt(prompt("Enter the maximum number!"));
-while(!maximum) {
-    maximum = parseInt(prompt("Enter a valid number!"));
-}
 
-const targetNum = Math.floor(Math.random() * maximum) + 1;
 
-let guess = parseInt(prompt("enter your first guess!"));
-let attempts = 1;
-
-while (parseInt(guess) !== targetNum) {
-    if (guess === "q") break;
-    attempts++;
-    if (guess > targetNum) {
-        guess = (prompt("Too high! Enter a new guess:"));        
-    }   else {
-        guess = (prompt("Too low! Enter a new guess:"))
+// Example of "for...of loop"
+const seatingChart = [
+    ["Kristen","Erik","Namita"],
+    ["Geoffrey","Juanita", "Antonio","Kevin"],
+    ["Yuma","Sakura","Jack","Erika"]
+]
+//instead of
+for (let i = 0; i < seatingChart.length; i++){
+    const row = seatingChart[i];
+    for (let j = 0; j < row.length; j++) {
+        console.log(row[j])
     }
-}
-
-if(guess === "q"){
-    console.log("OK, YOU QUIT!")
-} else {
-    console.log(`YOU GOT IT! It took you ${attempts} guesses`)
 }
