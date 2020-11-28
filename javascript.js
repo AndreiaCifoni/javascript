@@ -43,7 +43,7 @@
 
 
 
-//  GUESSING GAME EXERCISE
+//  //GUESSING GAME EXERCISE
 //
 //  let maximum = parseInt(prompt("Enter the maximum number!"));
 //  while(!maximum) {
@@ -73,16 +73,35 @@
 
 
 
-// Example of "for...of loop"
-const seatingChart = [
-    ["Kristen","Erik","Namita"],
-    ["Geoffrey","Juanita", "Antonio","Kevin"],
-    ["Yuma","Sakura","Jack","Erika"]
-]
-//instead of
-for (let i = 0; i < seatingChart.length; i++){
-    const row = seatingChart[i];
-    for (let j = 0; j < row.length; j++) {
-        console.log(row[j])
-    }
+//  // Example of "for...of loop"
+//  const seatingChart = [
+//      ["Kristen","Erik","Namita"],
+//      ["Geoffrey","Juanita", "Antonio","Kevin"],
+//      ["Yuma","Sakura","Jack","Erika"]
+//  ]
+//  //instead of
+//  for (let i = 0; i < seatingChart.length; i++){
+//      const row = seatingChart[i];
+//      for (let j = 0; j < row.length; j++) {
+//          console.log(row[j])
+//      }
+//  }
+//  // I can use
+//  for(let row of seatingChart) {
+//      for(let student of row) {
+//          console.log(student);
+//      }
+//  }
+
+
+// Exaxmple of "for...in loop" - to iterate objects
+const testScores = {
+    keenam: 80,
+    damon: 67,
+    kim: 89,
+    shawn: 91,
+    elvira: 97
+}
+for (let person in testScores){
+    console.log(`${person} scored ${testScores[person]}`);
 }
