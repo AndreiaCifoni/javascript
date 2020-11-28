@@ -26,17 +26,25 @@
 //  }
 
 
-const password = prompt ("please enter a new password")
-//password must be 6+ characters
-if(password.length >= 6){
-    //password cannot include space
-    if (password.indexOf(" ") === -1 ){
-        console.log("Valid password")
-    }
-    else {
-        console.log("password cannot contain spaces")
-    }
+//     const password = prompt ("please enter a new password")
+//     //password must be 6+ characters
+//     if(password.length >= 6){
+//         //password cannot include space
+//         if (password.indexOf(" ") === -1 ){
+//             console.log("Valid password")
+//         }
+//         else {
+//             console.log("password cannot contain spaces")
+//         }
+//     }
+//     else {
+//         console.log("Password too short! Must be 6+ characters")
+//     }
+
+
+let maximum = parseInt (prompt("Enter the maximum number!"));
+while(!maximum) {
+    maximum = parseInt (prompt("Enter a valid number!"));
 }
-else {
-    console.log("Password too short! Must be 6+ characters")
-}
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+console.log(targetNum);
